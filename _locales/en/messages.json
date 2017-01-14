@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "HeyBuddyHF",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Coded For The One Who Knocks",
+    "description": "The description of the application"
+  },
+  "appShortName": {
+    "message": "Pls Dont Scammer ME)",
+    "description": "The short name of the application"
+  }
+}

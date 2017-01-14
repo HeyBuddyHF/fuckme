@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "HeyBuddyHF",
+  "short_name": "HFHB",
+  "description": "Custom Bot For The one Who Knocks",
+  "version": "0.5.12",
+  "homepage_url": "https://hackforums.net/member.php?action=profile&uid=3150222",
+  "default_locale": "en",
+  "icons": {
+    "128": "images/favicon-128x128.png",
+    "512": "images/favicon-512x512.png"
+  },
+  "browser_action": {
+    "default_icon"  : "images/favicon-128x128.png",
+    "default_popup" : "layouts/popup.html",
+    "default_title" : "HeyBuddyHF"
+  },
+  "content_scripts": [ {
+    "js": [
+        "scripts/jquery-2.0.3.js",
+        "scripts/chess_controller.js",
+        "scripts/popup.js"
+    ],
+    "matches": [ "http://*.chess.com/echess/game?id=*", "https://*.chess.com/echess/game?id=*",
+        "http://*.chess.com/live?v=*", "https://*.chess.com/live?v=*",
+        "http://*.chess.com/daily/game/*", "https://*.chess.com/daily/game/*",
+        "http://*.chess.com/live", "https://*.chess.com/live",
+        "http://*.chess.com/live?*", "https://*.chess.com/live?*",
+        "http://*.chess.com/simple?v=*", "https://*.chess.com/simple?v=*",
+        "http://*.lichess.org/*", "https://*.lichess.org/*",
+        "http://*.chesskid.com/simple*", "https://*.chesskid.com/simple*"]
+  } ],
+  "permissions": [
+    "declarativeContent",
+    "tabs"
+  ]
+}
